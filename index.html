@@ -1,134 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Godmode Executor</title>
   <style>
     body {
-      margin: 0;
-      background-color: #0a0a0a;
-      color: #00ff88;
+      background-color: #000;
+      color: #00ff00;
       font-family: monospace;
-      overflow: hidden;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
-    .ads-top,
-    .ads-bottom {
+    .container {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .nav {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .ad-top, .ad-bottom {
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100%;
-      height: 80px;
-      background: #111;
+      justify-content: center;
+      flex-wrap: wrap;
       position: fixed;
-      left: 0;
-      z-index: 10;
+      width: 100%;
+      z-index: 9999;
     }
 
-    .ads-top {
+    .ad-top {
       top: 0;
     }
 
-    .ads-bottom {
+    .ad-bottom {
       bottom: 0;
     }
 
-    .ads-left,
-    .ads-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 80px;
-      height: 100vh;
-      background: #111;
+    .ad-left, .ad-right {
       position: fixed;
       top: 0;
-      z-index: 10;
+      bottom: 0;
+      width: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      z-index: 9999;
     }
 
-    .ads-left {
+    .ad-left {
       left: 0;
     }
 
-    .ads-right {
+    .ad-right {
       right: 0;
     }
 
     .ad {
-      width: 60px;
-      height: 60px;
-      background-color: #000;
-      border: 1px solid #00ff88;
-    }
-
-    .main-content {
-      position: absolute;
-      top: 100px;
-      bottom: 100px;
-      left: 100px;
-      right: 100px;
-      padding: 20px;
-      overflow-y: auto;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 3em;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 1em;
+      width: 120px;
+      height: 100px;
+      background-color: #111;
+      border: 1px solid #00ff00;
+      margin: 2px;
     }
 
     a {
-      color: #00ff88;
-      text-decoration: underline;
+      color: #00ff00;
+      text-decoration: none;
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #00cc66;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- TOP ADS -->
-  <div class="ads-top">
+  <!-- Top Ads -->
+  <div class="ad-top">
+    <!-- Repeat this div 10x for 10 ads -->
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <!-- BOTTOM ADS -->
-  <div class="ads-bottom">
+  <!-- Left Ads -->
+  <div class="ad-left">
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <!-- LEFT ADS -->
-  <div class="ads-left">
+  <!-- Right Ads -->
+  <div class="ad-right">
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <!-- RIGHT ADS -->
-  <div class="ads-right">
+  <!-- Bottom Ads -->
+  <div class="ad-bottom">
+    <!-- Repeat this div 10x for 10 ads -->
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
     <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <!-- MAIN CONTENT -->
-  <div class="main-content">
+  <!-- Content -->
+  <div class="container">
     <h1>Godmode Executor</h1>
     <p>The next generation of script execution.</p>
-    <p>Clean. Powerful. Undetectable. Made for Windows, Android — and maybe more.</p>
-    <p>We’re placing ads to fund development. Thanks for supporting us.</p>
-    <p><a href="discord.html">Join our Discord</a> to stay updated and support us.</p>
-    <footer>© 2025 Godmode Exec</footer>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="features.html">Features</a> |
+      <a href="support.html">Support</a> |
+      <a href="discord.html">Discord</a>
+    </div>
   </div>
 
 </body>
