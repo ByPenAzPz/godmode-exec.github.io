@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Godmode Executor</title>
   <style>
     body {
       background-color: #0a0a0a;
       color: #00ff88;
-      font-family: monospace, monospace;
+      font-family: monospace;
       margin: 0;
       padding: 0;
       text-align: center;
     }
     header {
-      padding: 50px 20px 20px;
+      padding: 40px 20px 10px;
       font-size: 3em;
       font-weight: bold;
     }
-    p {
-      font-size: 1.2em;
-      padding: 10px 20px;
-      max-width: 700px;
-      margin: auto;
-    }
     .section {
-      padding: 80px 0;
+      padding: 40px 20px;
       border-bottom: 1px solid #00ff88;
     }
-    a {
-      color: #00ff88;
-      text-decoration: underline;
+    p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 10px auto;
     }
-    footer {
-      padding: 30px;
-      font-size: 0.9em;
-      color: #00cc66;
+    .ad-corner {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      z-index: 999;
+    }
+    .top-left { top: 0; left: 0; }
+    .top-right { top: 0; right: 0; }
+    .bottom-left { bottom: 0; left: 0; }
+    .bottom-right { bottom: 0; right: 0; }
+    .ad-block {
+      width: 80px;
+      height: 80px;
+      margin: 5px;
+      background-color: #111;
+      border: 1px solid #00ff88;
+      display: inline-block;
+    }
+    .corner-ads {
+      display: flex;
+      flex-wrap: wrap;
+      width: 220px;
+      height: 220px;
+      justify-content: center;
+      align-items: center;
     }
   </style>
 </head>
 <body>
+
+  <!-- AD CORNERS -->
+  <div class="ad-corner top-left"><div class="corner-ads">
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+  </div></div>
+
+  <div class="ad-corner top-right"><div class="corner-ads">
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+  </div></div>
+
+  <div class="ad-corner bottom-left"><div class="corner-ads">
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+  </div></div>
+
+  <div class="ad-corner bottom-right"><div class="corner-ads">
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+    <div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div><div class="ad-block"></div>
+  </div></div>
+
+  <!-- MAIN CONTENT -->
   <header>Godmode Executor</header>
 
   <div class="section">
     <p>The next generation of script execution.</p>
-    <p>Clean. Powerful. Undetectable. Made for Windows, Android — and maybe even more...</p>
+    <p>Clean. Powerful. Undetectable. Made for Windows, Android — and maybe even more.</p>
+    <p>Yes, we’re placing ads. They help fund development — and we need your support to launch Godmode.</p>
   </div>
 
   <div class="section">
-    <p><a href="discord.html">Join our Discord</a> to stay updated while we build.</p>
-    <p>We’re building a full team — developers, promoters, supporters.</p>
-    <p>Executor coming soon.</p>
+    <p><a href="discord.html" style="color:#00ff88;">Join our Discord</a> to get updates, help out, and stay ahead.</p>
+    <p>We’re building something massive. Want in?</p>
   </div>
 
-  <footer>
-    © 2025 Godmode Executor. Built by the community.
-  </footer>
 </body>
 </html>
