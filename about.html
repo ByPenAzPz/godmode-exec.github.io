@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Next Generation</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0a0a0a;
+      color: #00ff88;
+      font-family: monospace;
+      overflow: hidden;
+    }
+
+    .ads-top,
+    .ads-bottom {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      background: #111;
+      position: fixed;
+      left: 0;
+      z-index: 10;
+    }
+
+    .ads-top {
+      top: 0;
+    }
+
+    .ads-bottom {
+      bottom: 0;
+    }
+
+    .ads-left,
+    .ads-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80px;
+      height: 100vh;
+      background: #111;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+
+    .ads-left {
+      left: 0;
+    }
+
+    .ads-right {
+      right: 0;
+    }
+
+    .ad {
+      width: 60px;
+      height: 60px;
+      background-color: #000;
+      border: 1px solid #00ff88;
+    }
+
+    .main-content {
+      position: absolute;
+      top: 100px;
+      bottom: 100px;
+      left: 100px;
+      right: 100px;
+      padding: 20px;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.6em;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.2em;
+    }
+
+    a {
+      color: #00ff88;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #00cc66;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP ADS -->
+  <div class="ads-top">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+  </div>
+
+  <!-- BOTTOM ADS -->
+  <div class="ads-bottom">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+  </div>
+
+  <!-- LEFT ADS -->
+  <div class="ads-left">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+  </div>
+
+  <!-- RIGHT ADS -->
+  <div class="ads-right">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <h1>The Next Generator of Executors</h1>
+    <p>Godmode isn't just another tool — it’s a full upgrade from anything you’ve seen before.</p>
+    <p>We're building something powerful, flexible, and built for the future of Roblox scripts.</p>
+    <p>Android will launch first. Windows will follow. iOS and more are planned.</p>
+    <p>This is your next-generation executor. Built by devs. Funded by the community. Focused on power.</p>
+    <footer>© 2025 Godmode Exec</footer>
+  </div>
+
+</body>
+</html>
