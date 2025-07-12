@@ -2,115 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join the Godmode Discord</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Godmode Discord</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
+      background-color: #0a0a0a;
       color: #00ff88;
       font-family: monospace;
+      overflow: hidden;
+    }
+
+    .ads-top,
+    .ads-bottom {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      background: #111;
+      position: fixed;
+      left: 0;
+      z-index: 10;
+    }
+
+    .ads-top {
+      top: 0;
+    }
+
+    .ads-bottom {
+      bottom: 0;
+    }
+
+    .ads-left,
+    .ads-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80px;
+      height: 100vh;
+      background: #111;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+
+    .ads-left {
+      left: 0;
+    }
+
+    .ads-right {
+      right: 0;
+    }
+
+    .ad {
+      width: 60px;
+      height: 60px;
+      background-color: #000;
+      border: 1px solid #00ff88;
+    }
+
+    .main-content {
+      position: absolute;
+      top: 100px;
+      bottom: 100px;
+      left: 100px;
+      right: 100px;
+      padding: 20px;
+      overflow-y: auto;
       text-align: center;
     }
 
-    .container {
-      padding: 100px 20px;
-      z-index: 1;
-      position: relative;
+    h1 {
+      font-size: 2.8em;
     }
 
-    img.logo {
-      width: 150px;
-      margin: 40px auto 20px;
-      display: block;
+    p {
+      font-size: 1.2em;
+      margin-bottom: 1.2em;
     }
 
     a {
       color: #00ff88;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2em;
+      text-decoration: underline;
     }
 
-    .footer {
-      margin-top: 60px;
-      font-size: 0.8em;
-      color: #888;
-    }
-
-    .ads {
-      position: fixed;
-      width: 100%;
-      text-align: center;
-      z-index: 0;
-      font-size: 10px;
-      color: #444;
-    }
-
-    .ad-top, .ad-bottom {
-      display: flex;
-      justify-content: center;
-      gap: 2px;
-      flex-wrap: wrap;
-    }
-
-    .ad-top { top: 0; }
-    .ad-bottom { bottom: 0; }
-
-    .ad-left, .ad-right {
-      width: 100px;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    .ad-left { left: 0; }
-    .ad-right { right: 0; }
-
-    .ad-box {
-      background-color: #111;
-      border: 1px solid #00ff88;
-      padding: 4px;
-      font-size: 9px;
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #00cc66;
     }
   </style>
 </head>
 <body>
 
-  <img src="logo.png" alt="Godmode Logo" class="logo" />
-
-  <div class="container">
-    <h1>Join the Godmode Discord</h1>
-    <p>Join our temporary Discord server to stay updated.<br>The official main server will be posted there once it's ready.</p>
-    <p><a href="https://discord.gg/Kgj4SCr3YE" target="_blank">https://discord.gg/Kgj4SCr3YE</a></p>
-
-    <div class="footer">
-      This page contains ads to help support development.
-    </div>
+  <!-- TOP ADS -->
+  <div class="ads-top">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <div class="ads ad-top">
-    <div class="ad-box">Top Ad 1</div>
-    <div class="ad-box">Top Ad 2</div>
+  <!-- BOTTOM ADS -->
+  <div class="ads-bottom">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <div class="ads ad-bottom">
-    <div class="ad-box">Bottom Ad 1</div>
-    <div class="ad-box">Bottom Ad 2</div>
+  <!-- LEFT ADS -->
+  <div class="ads-left">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <div class="ads ad-left">
-    <div class="ad-box">Left Ad 1</div>
-    <div class="ad-box">Left Ad 2</div>
+  <!-- RIGHT ADS -->
+  <div class="ads-right">
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
+    <div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div><div class="ad"></div>
   </div>
 
-  <div class="ads ad-right">
-    <div class="ad-box">Right Ad 1</div>
-    <div class="ad-box">Right Ad 2</div>
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <h1>Join Our Discord</h1>
+    <p>The executor is not released yet — but we’re working hard on it.</p>
+    <p>Join our official Discord to get news, sneak peeks, volunteer opportunities, and more.</p>
+    <p>This is where you'll find updates, community help, and important announcements.</p>
+    <p><a href="https://discord.gg/Kgj4SCr3YE" target="_blank">Join Now → discord.gg/Kgj4SCr3YE</a></p>
+    <footer>© 2025 Godmode Exec</footer>
   </div>
 
 </body>
